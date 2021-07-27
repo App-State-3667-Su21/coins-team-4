@@ -21,5 +21,6 @@ public abstract class Mint {
 	return "[Mint: name="+name+",location="+location+"]";
     }
 
-    public Coin makeCoin(double denomination);
+    //public Coin makeCoin(double denomination);
+    
 }
