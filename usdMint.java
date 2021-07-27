@@ -1,0 +1,3 @@
+class UsdMint extends Mint{
+    
+}
