@@ -1,6 +1,6 @@
 public class fakeCoin extends Coin {
     public fakeCoin(){}
     public String toString() {
-        return "";
+        return "Coin is fake.";
     }
 }

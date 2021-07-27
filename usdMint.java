@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-class UsdMint extends Mint{
-    
-}
-=======
 public class usdMint extends Mint {
     public Coin makeCoin(double denomination) {
         Coin coin = new fakeCoin();
@@ -26,9 +21,4 @@ public class usdMint extends Mint {
         System.out.println("Buffing coin");
         return coin;
     }
-<<<<<<< HEAD
-}:w
->>>>>>> 0e1a4768f169f4a324db48555a3d18e16c075dc1
-=======
 }
->>>>>>> 650d7a495965b2094a0e2862bac16bd591e71b2f
