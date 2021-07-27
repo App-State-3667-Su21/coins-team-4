@@ -28,12 +28,36 @@ public class TestMint {
 
 	assertEquals(expectedValue, actualValue);
     }
+    @Test
+    public void TestParameteriedConstructor() {
+	MockMint mockMint = new MockMint("U.S.Treasury", "Washington D.C.");
+	// if make it here then believing it
+	// worked! Will test toString to ensure
+	// field values.
+	assertTrue(true);
+    }
+
+    @Test
+    public void TestParameterizedConstructorValues() {
+	MockMint mockMint = new MockMint("U.S.Treasury", "Washington D.C.");
+	String actualValue = mockMint.toString();
+	String expectedValue = "[Mint: name="
+	    + "U.S.Treasury"
+	    + ",location="
+	    + "Washington D.C."
+	    + "]";
+
+	assertEquals(expectedValue, actualValue);
+    }
 }
 
 // Mint is abstract so to test it I need 
 // a concrete subclass
 class MockMint extends Mint {
-    // Not adding anything, my job is
-    // to provide a way to get to the
-    // inherited items.
+    public MockMint() {
+	super();
+    }
+    public MockMint(String nam, String loc) {
+	super(nam, loc);
+    }
 }
