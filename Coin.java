@@ -1,4 +1,5 @@
 public abstract class Coin {
+
     // Common attriutes shared by all coins.
     // Subclasses provide details.
     private double value;
@@ -21,5 +22,4 @@ public abstract class Coin {
 
 
 
-    public abstract String toString();
-}
+

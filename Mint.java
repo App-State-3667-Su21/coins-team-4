@@ -8,15 +8,19 @@ public abstract class Mint {
     private String location;
 
     public Mint(String name, String location) {
-	this.name = name;
-	this.location = location;
+        this.name = name;
+        this.location = location;
     }
+
     public Mint() {
-	this("NoName", "NoLocation");
+        this("NoName", "NoLocation");
     }
 
     // I LOVE LOVE LOVE overriding this so println works!
     public String toString() {
 	return "[Mint: name="+name+",location="+location+"]";
     }
+
+    //public Coin makeCoin(double denomination);
+    
 }
