@@ -19,6 +19,7 @@ public class usdMint extends Mint {
         System.out.println("Inspecting coin");
         System.out.println("Smoothing coin");
         System.out.println("Buffing coin");
+        System.out.println();
         return coin;
     }
 }
