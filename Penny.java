@@ -1,5 +1,7 @@
 public class Penny extends Coin {
-    public Penny(){}
+    public Penny() {
+	super("USD", 0.01);
+    }
     public String toString() {
         return "Smelting coin. Pennies are smelted with 2.5% Cu and 97.5% Zn.";
     }
