@@ -1,4 +1,3 @@
-
 // I need a Mint class to test it.
 
 // No specific specs for what attributes might be in a Mint.
