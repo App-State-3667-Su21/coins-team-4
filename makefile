@@ -32,6 +32,7 @@ default:
 
 compile:  $(JUNIT5_JAR)
 	javac -cp .:$(JUNIT5_JAR) Test*.java
+	javac Demo.java
 
 clean:
 	rm -f *~

@@ -1,7 +1,4 @@
 public class Demo {
-<<<<<<< HEAD
-
-=======
     public static void main(String[] args) {
         Mint federalReserve = new usdMint();
         java.util.Scanner kb = new java.util.Scanner(System.in);
@@ -14,5 +11,4 @@ public class Demo {
             federalReserve.makeCoin(denomination);
         }
     }
->>>>>>> c8cd79a5c440fd82d9cabcfe435de13954b5c182
 }
