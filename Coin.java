@@ -19,6 +19,7 @@ public abstract class Coin {
 
     // Simple field mutators
     // can't change value, countryCode of a coin!! (Can make a different coin!)
+}
 
 
 
