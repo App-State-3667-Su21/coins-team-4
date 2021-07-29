@@ -60,4 +60,5 @@ class MockMint extends Mint {
     public MockMint(String nam, String loc) {
 	super(nam, loc);
     }
+	public Coin makeCoin(double denomination) {return null;}
 }
