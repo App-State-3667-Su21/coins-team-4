@@ -14,12 +14,18 @@ public class usdMint extends Mint {
         } else if (denomination == 1) {
             coin = new Dollar();
         }
+        
+        return coin;
+    }
 
-        System.out.println(coin);
+    public void manufactureCoin(Coin coin) {
+        System.out.println("Smelting coin."+coin);
+    }
+
+    public void afterManufacture() {
         System.out.println("Inspecting coin");
         System.out.println("Smoothing coin");
         System.out.println("Buffing coin");
         System.out.println();
-        return coin;
     }
 }

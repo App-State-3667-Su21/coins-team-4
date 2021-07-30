@@ -3,6 +3,6 @@ public class HalfDollar extends Coin {
         super("USD", 0.50);
     }
     public String toString() {
-        return "Smelting coin. "+getCountryCode()+" Half Dollars are smelted with 91.67% Cu and 8.33% Ni.";
+        return " "+getCountryCode()+" Half Dollars are smelted with 91.67% Cu and 8.33% Ni.";
     }
 }

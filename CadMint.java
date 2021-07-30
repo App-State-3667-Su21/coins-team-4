@@ -15,11 +15,17 @@ public class CadMint extends Mint {
             coin = new Toonie();
         }
 
-        System.out.println(coin);
+        return coin;
+    }
+
+    public void manufactureCoin(Coin coin) {
+        System.out.println("Smelting coin."+coin);
+    }
+
+    public void afterManufacture() {
         System.out.println("Inspecting coin");
         System.out.println("Smoothing coin");
         System.out.println("Buffing coin");
         System.out.println();
-        return coin;
     }
 }
