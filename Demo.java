@@ -11,6 +11,7 @@ public class Demo {
             country = kb.nextLine();
         }
 
+        Coin coin = new NullObject();
         double denomination = 100.0;
         while (denomination != 0) {
             System.out.print("Enter the denomination for your coin (0 to quit): ");
@@ -18,9 +19,16 @@ public class Demo {
             if (denomination == 0) break;
             System.out.println();
             if (country.equals("USD")) {
-                federalReserve.makeCoin(denomination);              
+                coin = federalReserve.makeCoin(denomination);
+                if (!(coin.getCountryCode() == null)) {
+                    federalReserve.manufactureCoin(coin);
+                    federalReserve.afterManufacture();  
+                }        
             } else if (country.equals("CAD")) {
-                canuckReserve.makeCoin(denomination);
+                if (!(coin.getCountryCode() == null)) {
+                    canuckReserve.manufactureCoin(coin);
+                    canuckReserve.afterManufacture();
+                }
             }
         }
     }

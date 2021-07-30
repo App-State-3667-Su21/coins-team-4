@@ -61,4 +61,6 @@ class MockMint extends Mint {
 	super(nam, loc);
     }
 	public Coin makeCoin(double denomination) {return null;}
+	public void manufactureCoin(Coin coin) {}
+	public void afterManufacture() {}
 }
