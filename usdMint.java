@@ -1,4 +1,22 @@
+/*
+ * There MUST only be one usdMint object allowed!
+ * So, deploying threadsafe eager Singleton pattern
+ */
+
 public class usdMint extends Mint {
+
+    private static usdMint instance = new usdMint();
+    public static usdMint getInstance() {
+	return instance;
+    }
+
+    private usdMint() {
+        this("UsdMint", "Washington D.C.");
+    }
+    private usdMint(String name, String location) {
+        super(name, location);
+    }
+
     public Coin makeCoin(double denomination) {
         Coin coin = new fakeCoin();
         if (denomination == 0.01) {

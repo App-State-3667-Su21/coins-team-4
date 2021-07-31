@@ -1,7 +1,13 @@
 public class Demo {
     public static void main(String[] args) {
-        Mint federalReserve = new usdMint();
-        Mint canuckReserve = new CadMint();
+	// Using singleton mint now
+	// Mint federalReserve = new usdMint();
+	Mint federalReserve = usdMint.getInstance();
+
+	// Using singleton mint now
+        // Mint canuckReserve = new CadMint();
+        Mint canuckReserve = CadMint.getInstance();
+
         java.util.Scanner kb = new java.util.Scanner(System.in);
 
         System.out.println("Select country (USD or CAD)");
