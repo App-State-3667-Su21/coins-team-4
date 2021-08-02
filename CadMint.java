@@ -1,6 +1,6 @@
 public class CadMint extends Mint {
     public Coin makeCoin(double denomination) {
-        Coin coin = new NullObject();
+        Coin coin = NullCoin.NULL;
         if (denomination == 0.05) {
             coin = new CadNickel();
         } else if (denomination == 0.10) {

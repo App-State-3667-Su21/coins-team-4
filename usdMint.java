@@ -1,6 +1,6 @@
 public class usdMint extends Mint {
     public Coin makeCoin(double denomination) {
-        Coin coin = new NullObject();
+        Coin coin = NullCoin.NULL;
         if (denomination == 0.01) {
             coin = new Penny();
         } else if (denomination == 0.05) {
