@@ -11,7 +11,7 @@ public class Demo {
             country = kb.nextLine();
         }
 
-        Coin coin = new NullObject();
+        Coin coin = NullCoin.NULL;
         double denomination = 100.0;
         while (denomination != 0) {
             System.out.print("Enter the denomination for your coin (0 to quit): ");
@@ -20,6 +20,8 @@ public class Demo {
             System.out.println();
             if (country.equals("USD")) {
                 coin = federalReserve.makeCoin(denomination);
+
+		// NullCoin pattern should eliminate these null checks?!!
                 if (!(coin.getCountryCode() == null)) {
                     federalReserve.manufactureCoin(coin);
                     federalReserve.afterManufacture();  
