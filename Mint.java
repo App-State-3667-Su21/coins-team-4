@@ -21,6 +21,6 @@ public abstract class Mint {
     }
 
     public abstract Coin makeCoin(double denomination);
-    public abstract void manufactureCoin(Coin coin);
-    public abstract void afterManufacture();
+//    public abstract void manufactureCoin(Coin coin);
+//    public abstract void afterManufacture();
 }

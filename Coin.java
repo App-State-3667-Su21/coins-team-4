@@ -26,7 +26,27 @@ public abstract class Coin {
     }
 
     // Common coin methods
-    
+    public void manufacture() {
+	smelt();
+        imprint();
+        smooth();
+        inspect();
+        buff();	
+    }
+    public void smelt() {
+       // System.out.println("Smelting...");
+       myCoinSmelter.smelt();
+    }
+    public abstract void imprint();
+    public void inspect() {
+       System.out.println("Inspecting...");
+    }
+    public void smooth() {
+       System.out.println("Smoothing...");
+    }
+    public void buff() {
+       System.out.println("Buffing...");
+    }
 }
 
 

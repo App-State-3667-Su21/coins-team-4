@@ -1,8 +1,12 @@
 public class Penny extends Coin {
     public Penny() {
-	    super("USD", 0.01);
+	super("USD", 0.01);
+        setSmelter(new UsdPennySmelter());
+    }
+    public void imprint() { 
+        System.out.println("Imprinting a USD penny...");
     }
     public String toString() {
-        return " "+getCountryCode()+" Pennies are smelted with 2.5% Cu and 97.5% Zn.";
+        return " "+getCountryCode()+" Penny";
     }
 }

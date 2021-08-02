@@ -7,4 +7,10 @@ public class NullCoin extends Coin {
     private NullCoin() {
         super("None", 0);
     }
+
+    public void smelt() { }
+    public void imprint() { }
+    public void inspect() { } 
+    public void smooth() { } 
+    public void buff() { } 
 }
