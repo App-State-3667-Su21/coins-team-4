@@ -14,10 +14,11 @@ public class usdMint extends Mint {
         } else if (denomination == 1) {
             coin = new Dollar();
         }
-        
+
+        coin.manufacture();        
         return coin;
     }
-
+/*
     public void manufactureCoin(Coin coin) {
         System.out.println("Smelting coin."+coin);
     }
@@ -28,4 +29,5 @@ public class usdMint extends Mint {
         System.out.println("Buffing coin");
         System.out.println();
     }
+*/
 }

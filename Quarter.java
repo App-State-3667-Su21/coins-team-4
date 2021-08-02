@@ -1,8 +1,12 @@
 public class Quarter extends Coin {
     public Quarter(){
         super("USD", 0.25);
+        setSmelter(new UsdDQHSmelter());
+    }
+    public void imprint() {
+        System.out.println("Imprinting a USD quarter...");
     }
     public String toString() {
-        return " "+getCountryCode()+" Quarters are smelted with 91.67% Cu and 8.33% Ni.";
+        return " "+getCountryCode()+" Quarter";
     }
 }

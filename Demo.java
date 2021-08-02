@@ -20,18 +20,25 @@ public class Demo {
             System.out.println();
             if (country.equals("USD")) {
                 coin = federalReserve.makeCoin(denomination);
-
+/*
 		// NullCoin pattern should eliminate these null checks?!!
                 if (!(coin.getCountryCode() == null)) {
                     federalReserve.manufactureCoin(coin);
                     federalReserve.afterManufacture();  
                 }        
+*/
             } else if (country.equals("CAD")) {
+                coin = federalReserve.makeCoin(denomination);
+/*
                 if (!(coin.getCountryCode() == null)) {
                     canuckReserve.manufactureCoin(coin);
                     canuckReserve.afterManufacture();
                 }
+*/
+            } else {
+                System.out.println("Unknown mint requested. Use USD or CAD.");
             }
+ 	    System.out.println("Made a " + coin + " coin.");
         }
     }
 }

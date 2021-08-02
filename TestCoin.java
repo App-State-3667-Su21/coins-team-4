@@ -88,4 +88,5 @@ class MockCoin extends Coin {
 	    + getValue()
 	    + "]";
     }
+    public void imprint() { }
 }
